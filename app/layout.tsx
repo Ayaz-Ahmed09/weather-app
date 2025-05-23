@@ -3,8 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Weather App",
-  description: "Created with v0",
-  generator: "v0.dev",
+  description: "Weather for every city in the world",
+  generator: "Next.js",
 };
 
 export default function RootLayout({
