@@ -1,0 +1,84 @@
+.hourlyContainer {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hourlyTitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.errorMessage {
+  text-align: center;
+  color: #e74c3c;
+  padding: 1rem 0;
+}
+
+.hourlyScroll {
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.hourlyList {
+  display: flex;
+  gap: 1rem;
+  min-width: max-content;
+  padding: 0 0.5rem;
+}
+
+.hourlyItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #f8f9fa;
+  border-radius: 0.75rem;
+  min-width: 80px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hourlyItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hourlyTime {
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.hourlyIconContainer {
+  margin: 0.25rem 0;
+  color: #1e90ff;
+}
+
+.hourlyTemp {
+  font-weight: 600;
+  color: #333;
+  margin: 0.25rem 0;
+}
+
+.hourlyPop {
+  font-size: 0.75rem;
+  color: #0066cc;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .hourlyList {
+    gap: 0.75rem;
+  }
+
+  .hourlyItem {
+    min-width: 70px;
+    padding: 0.5rem;
+  }
+}

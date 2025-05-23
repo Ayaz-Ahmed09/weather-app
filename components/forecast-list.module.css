@@ -1,0 +1,125 @@
+.forecastContainer {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+}
+
+.forecastTitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.errorMessage {
+  text-align: center;
+  color: #e74c3c;
+  padding: 1rem 0;
+}
+
+.forecastList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.forecastDay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 0.75rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.forecastDay:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.forecastDate {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.forecastIconContainer {
+  margin: 0.5rem 0;
+  color: #1e90ff;
+}
+
+.forecastTemp {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  align-items: center;
+}
+
+.maxTemp {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.minTemp {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.forecastDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0.5rem 0;
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.forecastPop {
+  color: #0066cc;
+  font-weight: 500;
+}
+
+.forecastHumidity {
+  color: #666;
+}
+
+.forecastWind {
+  color: #666;
+}
+
+.forecastDescription {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+  margin: 0.25rem 0;
+}
+
+.forecastAstro {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  color: #888;
+}
+
+.astroItem {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .forecastList {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .forecastDay {
+    padding: 0.75rem;
+  }
+}
